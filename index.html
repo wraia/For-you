@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#66a6ff">
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Positivity</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claw Machine</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🌞 Daily Positive Message for Dada </h1>
-    <p id="message">Loading...</p>
-    <button onclick="generateMessage()">New Message</button>
-  </div>
 
-  <script src="script.js"></script>
+<h1>Claw Machine of Positivity for Dada</h1>
+
+<div class="machine" id="machine">
+  <div class="rope" id="rope"></div>
+  <div class="claw" id="claw">
+    <div class="prong left"></div>
+    <div class="prong middle"></div>
+    <div class="prong right"></div>
+  </div>
+  <div class="balls-container" id="balls-container"></div>
+</div>
+
+<div class="controls">
+  <button id="leftBtn">Left</button>
+  <button id="grabBtn">Grab</button>
+  <button id="rightBtn">Right</button>
+</div>
+
+<div id="messageBanner" class="banner"></div>
+
+<canvas id="confettiCanvas"></canvas>
+
+<script src="script.js"></script>
 </body>
 </html>
