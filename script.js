@@ -78,22 +78,30 @@ function createBalls() {
 // Initialize balls
 createBalls();
 
-// Controls
-leftBtn.addEventListener('click', ()=>{
+// Controls - support click and touch
+function addButtonListener(btn, fn){
+  btn.addEventListener('click', fn);
+  btn.addEventListener('touchstart', e => { e.preventDefault(); fn(); });
+}
+
+addButtonListener(leftBtn, ()=>{
   if(clawX > 0){
     clawX -= step;
     claw.style.left = clawX + "px";
     rope.style.left = (clawX + 18) + "px";
   }
 });
-rightBtn.addEventListener('click', ()=>{
+
+addButtonListener(rightBtn, ()=>{
   if(clawX < machine.clientWidth - 40){
     clawX += step;
     claw.style.left = clawX + "px";
     rope.style.left = (clawX + 18) + "px";
   }
 });
-grabBtn.addEventListener('click', grab);
+
+addButtonListener(grabBtn, grab);
+
 
 // Grab claw
 function grab() {
@@ -225,3 +233,10 @@ function createBalls() {
     }, i * 50); // stagger each ball by 50ms
   }
 }
+
+function resizeCanvas() {
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
