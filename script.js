@@ -16,9 +16,9 @@ const step = 20;
 
 // Hardcoded messages
 const messages = [
-  "You are amazing Dada!",
-  "Keep smiling today, Dada 😊",
-  "Believe in yourself Dada!",
+  "You are amazing!",
+  "Keep smiling today 😊",
+  "Believe in yourself!",
   "You make the world brighter!",
   "You are strong and capable!",
   "Your kindness matters!",
