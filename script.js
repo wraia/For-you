@@ -23,7 +23,7 @@ const messages = [
   "Believe in yourself Dada!",
   "You make the world brighter Dada!",
   "You are strong and capable Dad!",
-  " Dada, Your kindness matters!",
+  "Dada, Your kindness matters!",
   "Dada, you inspire those around you!",
   "Dada, today will be great!",
   "You are so loved Dada!",
@@ -241,4 +241,5 @@ function resizeCanvas() {
 }
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
+
 
