@@ -16,36 +16,37 @@ const step = 20;
 
 // Hardcoded messages
 const messages = [
-  "You are amazing!",
-  "Keep smiling today 😊",
-  "Believe in yourself!",
-  "You make the world brighter!",
-  "You are strong and capable!",
-  "Your kindness matters!",
-  "You inspire those around you!",
-  "Today will be great!",
-  "You are loved!",
-  "Your smile is contagious!",
-  "You can achieve anything!",
-  "Never stop learning!",
-  "You are unique and special!",
-  "You make a difference!",
-  "Chase your dreams!",
-  "Stay positive!",
-  "You are brave!",
-  "You have a great heart!",
-  "Keep going, you got this!",
-  "You are unstoppable!",
-  "Your efforts matter!",
-  "Shine bright today!",
-  "You are appreciated!",
-  "Believe in your potential!",
-  "Your courage inspires!",
-  "You make life better!",
-  "Keep dreaming big!",
-  "You are full of talent!",
-  "Stay confident!",
-  "You are important!"
+  "I can't wait to see you Dada!",
+  "Thank you for working so hard for me Dada!",
+  "You are amazing Dada!",
+  "Keep smiling today Dada",
+  "Believe in yourself Dada!",
+  "You make the world brighter Dada!",
+  "You are strong and capable Dad!",
+  " Dada, Your kindness matters!",
+  "Dada, you inspire those around you!",
+  "Dada, today will be great!",
+  "You are so loved Dada!",
+  "Dada, your smile is contagious!",
+  "Dada, you can achieve anything!",
+  "You are unique and special Dada!",
+  "Dada, you make a difference!",
+  "Dada, keep chasing your dreams!",
+  "Stay positive Dada!",
+  "Daddy, you are so brave!",
+  "You have an awesome heart Dada!",
+  "Keep going, you got this Dada!",
+  "Dada, you are unstoppable!",
+  "Dada, your efforts matter!",
+  "Dada, shine bright today!",
+  "You are appreciated always Dada!",
+  "Dada, believe in your potential!",
+  "Your courage inspires me Dada!",
+  "You make my life better Dada!",
+  "Keep dreaming big Dada!",
+  "Dada, you are full of talent!",
+  "Stay confident Dada!",
+  "You are important Dada!"
 ];
 
 // Canvas for heart confetti
@@ -240,3 +241,4 @@ function resizeCanvas() {
 }
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
+
